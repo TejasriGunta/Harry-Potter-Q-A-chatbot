@@ -1,4 +1,4 @@
-# Harry-Potter-Q-A-chatbot
+# Harry Potter Q&A chatbot
 
 An AI-powered chatbot exclusively designed to answer questions about the Harry Potter universe. This project uses Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses to users' queries.
 
