@@ -2,4 +2,9 @@ streamlit
 PyPDF2
 sentence_transformers
 dotenv
+os
+requests
+json
+faiss
+
 
