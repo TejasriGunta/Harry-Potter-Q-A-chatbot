@@ -6,5 +6,7 @@ os
 requests
 json
 faiss
+numpy
+
 
 
