@@ -1,0 +1,3 @@
+streamllit
+PyPDF2
+
