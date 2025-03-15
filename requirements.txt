@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit
 PyPDF2
 sentence-transformers
@@ -10,3 +11,13 @@ numpy
 
 
 
+=======
+pypdf
+streamlit
+requests
+transformers
+python-dotenv
+requests
+torch
+faiss-cpu
+>>>>>>> 08feb51 (prompt changes)

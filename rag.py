@@ -69,12 +69,14 @@ def get_query_and_response_gemini(query):
         results.append(result_metadata)
         context+=(results[i]['text'])
         
-    prompt=f"question- {query}, context:({context}).  if answer not in context then give response 'not in context' only, if answer in context then give response as 'in context'only "
+    prompt=f"""You are an intelligent chatbot specialized in answering Harry Potter and the prisinor of azkaban-related questions.
+    Your task:
+    - If the retrieved context is relevant to the user's question, use it.
+    - If the retrieved context is **irrelevant** or **empty**, ignore it and answer from your own knowledge.
+    ### Context:
+    # {context}
+    # ### User Question:
+    # {query}
+    generate answer within 100-150 words,for introductory questions keep it short and creative, use your wizardy powers!"""
     response=get_response(prompt)
-    if 'not in context' in response:
-        response1=get_response(f"you are an AI chatbot for giving responses related to Harry potter, question-{query}, max length-100 words")
-        return(response1)
-    elif 'in context' in response:
-        response2=get_response(f"you are an AI chatbot for giving responses related to harry potter, give answer to the question-{query} based on the context-{context}, do not include start your response with-'based on'")
-        return(response2)
-    
+    return(response)
