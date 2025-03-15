@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-streamlit
-PyPDF2
-sentence-transformers
-dotenv
-os
-requests
-json
-faiss
-numpy
-
-
-
-=======
 pypdf
 streamlit
 requests
@@ -20,4 +6,3 @@ python-dotenv
 requests
 torch
 faiss-cpu
->>>>>>> 08feb51 (prompt changes)
